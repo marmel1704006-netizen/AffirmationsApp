@@ -1,6 +1,7 @@
 package com.example.affirmationsapp
 
 import android.os.Bundle
+import android.util.Log // Додали для логування
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -29,9 +30,13 @@ import com.example.affirmationsapp.data.Datasource
 import com.example.affirmationsapp.model.Affirmation
 import com.example.affirmationsapp.ui.theme.AffirmationsAppTheme
 
+// Тег, за яким ми будемо фільтрувати логі в Logcat
+private const val TAG = "MainActivity"
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate Called") // Лог: Створення
         setContent {
             AffirmationsAppTheme {
                 Surface(
@@ -42,6 +47,37 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    // Методи життєвого циклу (3-й пункт твоєї лаби)
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart Called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop Called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy Called")
     }
 }
 
