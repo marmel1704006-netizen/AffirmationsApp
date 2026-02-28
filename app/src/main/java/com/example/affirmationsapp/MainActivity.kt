@@ -30,13 +30,13 @@ import com.example.affirmationsapp.data.Datasource
 import com.example.affirmationsapp.model.Affirmation
 import com.example.affirmationsapp.ui.theme.AffirmationsAppTheme
 
-// Тег, за яким ми будемо фільтрувати логі в Logcat
+
 private const val TAG = "MainActivity"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate Called") // Лог: Створення
+        Log.d(TAG, "onCreate Called")
         setContent {
             AffirmationsAppTheme {
                 Surface(
@@ -49,7 +49,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    // Методи життєвого циклу (3-й пункт твоєї лаби)
+
     override fun onStart() {
         super.onStart()
         Log.d(TAG, "onStart Called")
