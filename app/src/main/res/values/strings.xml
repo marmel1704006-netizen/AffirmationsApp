@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="affirmation1">I am mary</string>
+    <string name="affirmation2">I am </string>
+    <string name="affirmation3">I am </string>
+    <string name="affirmation4">I am </string>
+    <string name="affirmation5">I am </string>
+    <string name="affirmation6">I am </string>
+    <string name="affirmation7">I am </string>
+    <string name="affirmation8">I am </string>
+    <string name="affirmation9">I am </string>
+    <string name="affirmation10">I am </string>
+</resources>
